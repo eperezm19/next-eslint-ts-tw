@@ -1,0 +1,2 @@
+pnpm lint-staged
+pnpm eslint . --ext .ts,.tsx --max-warnings=0

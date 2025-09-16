@@ -12,7 +12,7 @@ import eslintPluginJsxA11y from "eslint-plugin-jsx-a11y";
 export default [
   // Ignores configuration
   {
-    ignores: ["node_modules", ".next", "out", "coverage", ".idea"],
+    ignores: ["node_modules", ".next", "out", "coverage", ".idea", "next-env.d.ts"],
   },
   // General configuration
   {
@@ -98,7 +98,7 @@ export default [
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-confusing-void-expression": "off",
         "@typescript-eslint/no-unused-vars": [
-          "warn",
+          "error",
           {
             args: "after-used",
             ignoreRestSiblings: false,
